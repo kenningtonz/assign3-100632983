@@ -1,0 +1,88 @@
+/*
+Theme Name:   Twenty Twenty One Child
+Description:  TTwenty Twenty One Child Theme
+Author:       Kennedy Adams
+Template:     twentytwentyone
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  twentytwentyonechild
+*/
+
+.dropShadow {
+    box-shadow: 3px 3px 3px black;
+}
+
+.is-vertically-aligned-center {
+    text-align: center;
+}
+
+.aligncenter {
+    text-align: center;
+}
+
+.flexwrap {
+    flex-wrap: wrap !important;
+    justify-content: center;
+    align-items: stretch !important;
+    align-content: stretch !important;
+}
+
+.flexwrapNotstretch {
+    flex-wrap: wrap !important;
+    justify-content: center;
+}
+
+table {
+    width: 100% !important;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+audio {
+    max-width: 100%;
+}
+
+.flexwrap div,
+.flexwrapNotstretch div {
+    flex-grow: 1
+}
+
+.blue,
+.blue a {
+    color: #0F3D9F;
+}
+
+.red,
+.red a {
+    color: #643918;
+}
+
+.pink,
+.pink a {
+    color: #9C2460;
+}
+
+.featuredIMAGE img {
+    object-position: top center;
+}
+
+.wp-block-navigation {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.2column {
+    column-count: 2;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex
