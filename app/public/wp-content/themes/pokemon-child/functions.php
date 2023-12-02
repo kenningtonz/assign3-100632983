@@ -14,3 +14,5 @@ function my_theme_enqueue_styles() {
 		$theme->get( 'Version' ) // This only works if you have Version defined in the style header.
 	);
 }
+
+?>
