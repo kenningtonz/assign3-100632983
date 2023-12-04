@@ -30,7 +30,6 @@ Text Domain:  pokemon-child
 .pokemon-default p,
 .pokemon-pink p {
     color: var(--text-color);
-
 }
 
 .single-content {
@@ -50,65 +49,73 @@ Text Domain:  pokemon-child
     margin: 20px;
 }
 
+.dropShadow {
+    box-shadow: 3px 3px 3px var(--accent-color);
+    border: #8b0000 solid 5px;
+}
 
-.post-header {
+.is-vertically-aligned-center {
+    text-align: center;
+}
+
+.aligncenter {
+    text-align: center;
+}
+
+.flexwrap {
+    flex-wrap: wrap !important;
+    justify-content: center;
+    align-items: stretch !important;
+    align-content: stretch !important;
+}
+
+.flexwrapNotstretch {
+    flex-wrap: wrap !important;
+    justify-content: center;
+}
+
+/* table {
+    width: 100% !important;
+} */
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+audio {
+    max-width: 100%;
+}
+
+.flexwrap div,
+.flexwrapNotstretch div {
+    flex-grow: 1;
+}
+
+.pokemon-default h3 {
+    color: #534083;
+}
+
+.wp-block-group {
+    margin: 0 20px;
+}
+
+.wp-block-navigation {
+    list-style: none;
     display: flex;
     gap: 15px;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
-.post {
-    max-width: 600px;
-    min-width: 200px;
-    height: auto;
-    padding: 15px;
-    flex: 1;
+.twocolumn {
+    column-count: 2;
+}
+
+.flex {
     display: flex;
-    gap: 15px;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.post-image img {
-    border-radius: 10px;
-    min-height: 150px;
-    max-height: 150px;
-    object-fit: cover;
-}
-
-.posts {
-    display: flex;
-    background-color: var(--secondary-color);
-    border-radius: 10px;
-    padding: 15px;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.posts .pagination {
-    width: 100%;
-}
-
-.pokemon-quote {
-    font-style: italic;
-    font-weight: normal;
-}
-
-
-.footer {
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 15px;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    border-top: solid 5px var(--accent-color);
 }
 
-.footer a span{
-    color: var(--secondary-color);
-}
+/* HEADER */
 
 .header {
     display: flex;
@@ -168,47 +175,69 @@ Text Domain:  pokemon-child
 }
 
 
-
-.dropShadow {
-    box-shadow: 3px 3px 3px var(--accent-color);
-    border: #8b0000 solid 5px;
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-top: solid 5px var(--accent-color);
 }
 
-.is-vertically-aligned-center {
+.footer a span{
+    color: var(--secondary-color);
+}
+
+
+/* POSTS QUERY */
+
+.post-header {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post {
+    max-width: 600px;
+    min-width: 200px;
+    height: auto;
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post-image img {
+    border-radius: 10px;
+    min-height: 150px;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.posts {
+    display: flex;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 15px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.posts .pagination, .posts-title {
     text-align: center;
+    width: 100%;
 }
 
-.aligncenter {
-    text-align: center;
-}
-
-.flexwrap {
-    flex-wrap: wrap !important;
-    justify-content: center;
-    align-items: stretch !important;
-    align-content: stretch !important;
-}
-
-.flexwrapNotstretch {
-    flex-wrap: wrap !important;
-    justify-content: center;
-}
-
-/* table {
-    width: 100% !important;
-} */
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-audio {
-    max-width: 100%;
-}
-
-.flexwrap div,
-.flexwrapNotstretch div {
-    flex-grow: 1;
+/* POSTS */
+.pokemon-pink a,
+.pokemon.pink h2,
+#post-17 a {
+    color: #9C2460;
 }
 
 .blue,
@@ -223,17 +252,6 @@ audio {
     color: #643918;
 }
 
-.pokemon-default h3 {
-    color: #534083;
-}
-
-.pokemon-pink a,
-.pokemon.pink h2,
-#post-17 a {
-    color: #9C2460;
-}
-
-
 .single-image {
     width: 100%;
     height: auto;
@@ -244,30 +262,13 @@ audio {
 }
 
 .single-image img {
-
     width: 100%;
     object-fit: cover;
+    object-position: center;
 }
 
-
-
-
-.wp-block-group {
-    margin: 0 20px;
+.pokemon-quote {
+    font-style: italic;
+    font-weight: normal;
 }
 
-.wp-block-navigation {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-}
-
-.twocolumn {
-    column-count: 2;
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}

@@ -3,7 +3,6 @@
  * The header.
  *
  * This is the template that displays all of the <head> section and everything up until main.
-
  */
 
 ?>
@@ -28,38 +27,35 @@
         </a>
 
         <header id="masthead" class="header">
-           
-
-
             <div class="branding">
-            <div class="site-logo">
-                <?php the_custom_logo(); ?>
-            </div>
+                <div class="site-logo">
+                    <?php the_custom_logo(); ?>
+                </div>
                 <h1 class="site-title">
                     <?php bloginfo('name'); ?>
                 </h1>
                 <p class="site-description">
                     <?php bloginfo('description'); ?>
                 </p>
-                </div>
-  
+            </div>
 
+            <!-- taken from twentytwentone header.php -->
             <?php if (has_nav_menu('primary')): ?>
                 <nav id="site-navigation" class="primary-navigation"
-                    aria-label="<?php esc_attr_e('Primary menu', 'twentytwentyone'); ?>">
+                    aria-label="<?php esc_attr_e('Primary menu'); ?>">
                     <div class="menu-button-container">
                         <button id="primary-mobile-menu" class="button" aria-controls="primary-menu-list"
                             aria-expanded="false">
                             <span class="dropdown-icon open">
                                 <?php esc_html_e('Menu', 'twentytwentyone'); ?>
-                                <?php echo twenty_twenty_one_get_icon_svg('ui', 'menu'); // phpcs:ignore WordPress.Security.EscapeOutput ?>
+                                <?php echo twenty_twenty_one_get_icon_svg('ui', 'menu'); ?>
                             </span>
                             <span class="dropdown-icon close">
                                 <?php esc_html_e('Close', 'twentytwentyone'); ?>
-                                <?php echo twenty_twenty_one_get_icon_svg('ui', 'close'); // phpcs:ignore WordPress.Security.EscapeOutput ?>
+                                <?php echo twenty_twenty_one_get_icon_svg('ui', 'close');  ?>
                             </span>
-                        </button><!-- #primary-mobile-menu -->
-                    </div><!-- .menu-button-container -->
+                        </button>
+                    </div>
                     <?php
                     wp_nav_menu(
                         array(
