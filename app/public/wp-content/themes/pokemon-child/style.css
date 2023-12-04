@@ -6,28 +6,172 @@ Template:     twentytwentyone
 Version:      1.0.0
 License:      GNU General Public License v2 or later
 License URI:  http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain:  twentytwentyonechild
+Text Domain:  pokemon-child
 */
 
-/* custom-styles.css */
+/* style.css */
 
+:root {
+    --primary-color: #8b0000;
+    --secondary-color: white;
+    --accent-color: black;
+    --text-color: rgb(30, 30, 30);
+}
 
-.post-footer{
+.pokemon-pink.site-main {
+    background: linear-gradient(90deg, rgb(214, 133, 173) 0%, rgb(169, 143, 243) 100%)
+}
+
+.pokemon-default h2,
+.pokemon-default a {
+    color: var(--primary-color);
+}
+
+.pokemon-default p,
+.pokemon-pink p {
+    color: var(--text-color);
 
 }
 
-.post-content{
+.single-content {
+    margin: 0;
+}
+/* 
+.pokemon-default button {
+    background-color: var(--primary-color);
 
 }
 
-.post-header{
+.pokemon-default button a {
+    color: var(--secondary-color);
+} */
 
+.site-main.pokemon-default {
+    margin: 20px;
+}
+
+
+.post-header {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post {
+    max-width: 600px;
+    min-width: 200px;
+    height: auto;
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post-image img {
+    border-radius: 10px;
+    min-height: 150px;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.posts {
+    display: flex;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 15px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.posts .pagination {
+    width: 100%;
+}
+
+.pokemon-quote {
+    font-style: italic;
+    font-weight: normal;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-top: solid 5px var(--accent-color);
+}
+
+.footer a span{
+    color: var(--secondary-color);
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    flex-direction: column;
+}
+
+#primary-mobile-menu span {
+    color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 822px) {
+    .branding {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 823px) {
+    .branding {
+        flex-direction: row;
+    }
+}
+
+
+.header .site-title {
+    color: var(--secondary-color);
+    font-size: 50px;
+    text-transform: none;
+}
+
+.branding {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    align-items: center;
+}
+
+#primary-menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: #bfbfbf;
+
+}
+
+#site-navigation {
+    margin-left: 0;
+    width: 100%;
+    border-top: solid 5px var(--accent-color);
 }
 
 
 
 .dropShadow {
-    box-shadow: 3px 3px 3px black;
+    box-shadow: 3px 3px 3px var(--accent-color);
+    border: #8b0000 solid 5px;
 }
 
 .is-vertically-aligned-center {
@@ -50,9 +194,9 @@ Text Domain:  twentytwentyonechild
     justify-content: center;
 }
 
-table {
+/* table {
     width: 100% !important;
-}
+} */
 
 tr:nth-child(even) {
     background-color: #f2f2f2;
@@ -64,26 +208,52 @@ audio {
 
 .flexwrap div,
 .flexwrapNotstretch div {
-    flex-grow: 1
+    flex-grow: 1;
 }
 
 .blue,
-.blue a {
+.blue a,
+#post-13 a {
     color: #0F3D9F;
 }
 
 .red,
-.red a {
+.red a,
+#post-15 a {
     color: #643918;
 }
 
-.pink,
-.pink a {
+.pokemon-default h3 {
+    color: #534083;
+}
+
+.pokemon-pink a,
+.pokemon.pink h2,
+#post-17 a {
     color: #9C2460;
 }
 
-.featuredIMAGE img {
-    object-position: top center;
+
+.single-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.single-image img {
+
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.wp-block-group {
+    margin: 0 20px;
 }
 
 .wp-block-navigation {

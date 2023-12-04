@@ -7,9 +7,8 @@ get_header();
 ?>
 
 <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
-        <h1>page</h1>
-
+    <main id="main" class="site-main pokemon-default" role="main">
+        <?php the_content(); ?>
     </main>
 </div>
 
