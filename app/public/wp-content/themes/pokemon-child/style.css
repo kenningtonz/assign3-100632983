@@ -11,7 +11,8 @@ Text Domain:  pokemon-child
 
 /* style.css */
 
-@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+/* fonts from google fonts */
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,700;1,9..40,300;1,9..40,400;1,9..40,700&family=Monomaniac+One&display=swap');
 
 :root {
     --primary-color: #8b0000;
@@ -20,8 +21,11 @@ Text Domain:  pokemon-child
     --text-color: rgb(30, 30, 30);
 }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4, h2 a{
     font-family: 'Monomaniac One', sans-serif !important;
+}
+p, a, cite{
+    font-family: 'DM Sans', sans-serif !important;
 }
 
 .single-content {
