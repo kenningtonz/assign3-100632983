@@ -18,9 +18,9 @@ Text Domain:  pokemon-child
     --text-color: rgb(30, 30, 30);
 }
 
-.pokemon-pink.site-main {
+/* .pokemon-pink.site-main {
     background: linear-gradient(90deg, rgb(214, 133, 173) 0%, rgb(169, 143, 243) 100%)
-}
+} */
 
 .pokemon-default h2,
 .pokemon-default a {
@@ -53,6 +53,28 @@ Text Domain:  pokemon-child
     box-shadow: 3px 3px 3px var(--accent-color);
     border: #8b0000 solid 5px;
 }
+
+.pokemon-pink .dropShadow{
+    border:#9C2460 solid 5px;
+    box-shadow: 3px 3px 3px #390d23;
+}
+
+.pokemon-blue .dropShadow{
+    border:#0F3D9F solid 5px;
+    box-shadow: 3px 3px 3px #051537;
+}
+
+.pokemon-red .dropShadow{
+    border:#643918 solid 5px;
+    box-shadow: 3px 3px 3px #29170a;
+}
+
+.pokemon-green .dropShadow{
+    border:#008000 solid 5px;
+    box-shadow: 3px 3px 3px #003b00;
+}
+
+
 
 .is-vertically-aligned-center {
     text-align: center;
@@ -197,7 +219,7 @@ audio {
 
 /* POSTS QUERY */
 
-.post-header {
+.post-header{
     display: flex;
     gap: 15px;
     flex-direction: column;
@@ -244,16 +266,16 @@ audio {
     color: #9C2460;
 }
 
-.blue,
-.blue a,
 #post-13 a {
     color: #0F3D9F;
 }
 
-.red,
-.red a,
 #post-15 a {
     color: #643918;
+}
+
+#post-10 a {
+    color: #008000;
 }
 
 .single-image {
