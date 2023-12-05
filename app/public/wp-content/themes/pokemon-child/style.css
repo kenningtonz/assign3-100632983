@@ -232,7 +232,7 @@ audio {
     flex-wrap: wrap;
 }
 
-.posts .pagination, .posts-title {
+.posts .viewmore, .posts-title {
     text-align: center;
     width: 100%;
 }

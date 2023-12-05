@@ -6,25 +6,26 @@
  * @package WordPress
  */
 
-// Display custom query only on the homepage and one additional page (excluding the Posts Page)
+// Display posts query only on the homepage and one additional page (excluding the Posts Page)
 if (is_front_page() || is_page($page = 'about')) {
     ?>
     <section class="posts dropShadow alignwide">
-        <h2 class="posts-title"><?php esc_html_e('Latest Pokémon'); ?></h2>
+        <h2 class="posts-title">
+            <?php esc_html_e('Latest Pokémon'); ?>
+        </h2>
         <?php
         $args = array(
             'post_type' => 'post',
             'posts_per_page' => 3,
             'orderby' => 'date',
-            'order' => 'DESC',
-            'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
+            'order' => 'DESC'
         );
 
-        $custom_query = new WP_Query($args);
+        $posts_query = new WP_Query($args);
 
-        if ($custom_query->have_posts()) {
-            while ($custom_query->have_posts()) {
-                $custom_query->the_post();
+        if ($posts_query->have_posts()) {
+            while ($posts_query->have_posts()) {
+                $posts_query->the_post();
                 ?>
 
                 <article class="post" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -46,20 +47,16 @@ if (is_front_page() || is_page($page = 'about')) {
                         <?php esc_html_e('Read More'); ?>
                     </a>
                 </article>
-
                 <?php
             }
 
-            // pagination
-            echo '<div class="pagination">';
-            echo paginate_links(
-                array(
-                    'total' => $custom_query->max_num_pages,
-                    'current' => max(1, get_query_var('paged')),
-                )
-            );
-            echo '</div>';
 
+            ?>
+            <div class="viewmore">
+                <a href="<?php echo esc_url(get_permalink(get_page_by_title('Blog'))); ?>">View More</a>
+            </div>
+            <?php
+            
             wp_reset_postdata(); // reset post data to the main loop
         } else {
             // no posts found
