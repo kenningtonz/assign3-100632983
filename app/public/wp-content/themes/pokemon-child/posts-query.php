@@ -7,10 +7,10 @@
  */
 
 // Display custom query only on the homepage and one additional page (excluding the Posts Page)
-if (is_front_page() || is_page('about')) {
+if (is_front_page() || is_page($page = 'about')) {
     ?>
     <section class="posts dropShadow alignwide">
-        <h2 class="posts-title"><?php esc_html_e('Latest Posts'); ?></h2>
+        <h2 class="posts-title"><?php esc_html_e('Latest Pokémon'); ?></h2>
         <?php
         $args = array(
             'post_type' => 'post',

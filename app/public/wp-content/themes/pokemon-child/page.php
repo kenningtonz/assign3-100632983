@@ -8,11 +8,9 @@ get_header();
 ?>
 
 <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
+    <main id="main" class="site-main pokemon-default" role="main">
         <?php
-        if (has_content()) {
             the_content();
-        }
         get_template_part('posts-query');
         ?>
     </main>
