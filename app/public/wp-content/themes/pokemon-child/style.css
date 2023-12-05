@@ -11,6 +11,8 @@ Text Domain:  pokemon-child
 
 /* style.css */
 
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+
 :root {
     --primary-color: #8b0000;
     --secondary-color: white;
@@ -18,32 +20,13 @@ Text Domain:  pokemon-child
     --text-color: rgb(30, 30, 30);
 }
 
-/* .pokemon-pink.site-main {
-    background: linear-gradient(90deg, rgb(214, 133, 173) 0%, rgb(169, 143, 243) 100%)
-} */
-
-.pokemon-default h2,
-.pokemon-default a {
-    color: var(--primary-color);
-}
-
-.pokemon-default p,
-.pokemon-pink p {
-    color: var(--text-color);
+h1, h2, h3, h4{
+    font-family: 'Monomaniac One', sans-serif !important;
 }
 
 .single-content {
     margin: 0;
 }
-/* 
-.pokemon-default button {
-    background-color: var(--primary-color);
-
-}
-
-.pokemon-default button a {
-    color: var(--secondary-color);
-} */
 
 .site-main.pokemon-default {
     margin: 20px;
@@ -74,8 +57,6 @@ Text Domain:  pokemon-child
     box-shadow: 3px 3px 3px #003b00;
 }
 
-
-
 .is-vertically-aligned-center {
     text-align: center;
 }
@@ -96,10 +77,6 @@ Text Domain:  pokemon-child
     justify-content: center;
 }
 
-/* table {
-    width: 100% !important;
-} */
-
 .page-title{
     text-align: center;
 }
@@ -117,7 +94,6 @@ audio {
     flex-grow: 1;
 }
 
-
 .wp-block-group {
     margin: 0 20px;
 }
@@ -130,8 +106,8 @@ audio {
 
 .fourcolumn {
     column-count: 4;
-
 }
+
 .fourcolumn li{
    margin: 0 15px;
 }

@@ -67,8 +67,8 @@
                         )
                     );
                     ?>
-                </nav><!-- #site-navigation -->
+                </nav>
                 <?php
             endif; ?>
 
-        </header><!-- #masthead -->
+        </header>
