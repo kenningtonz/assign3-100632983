@@ -21,10 +21,10 @@ Text Domain:  pokemon-child
     --text-color: rgb(30, 30, 30);
 }
 
-h1, h2, h3, h4, h2 a{
+h1, h2, h3, h4, h2 a, th{
     font-family: 'Monomaniac One', sans-serif !important;
 }
-p, a, cite{
+p, a, cite, td{
     font-family: 'DM Sans', sans-serif !important;
 }
 
@@ -69,17 +69,6 @@ p, a, cite{
     text-align: center;
 }
 
-.flexwrap {
-    flex-wrap: wrap !important;
-    justify-content: center;
-    align-items: stretch !important;
-    align-content: stretch !important;
-}
-
-.flexwrapNotstretch {
-    flex-wrap: wrap !important;
-    justify-content: center;
-}
 
 .page-title{
     text-align: center;
@@ -91,11 +80,6 @@ tr:nth-child(even) {
 
 audio {
     max-width: 100%;
-}
-
-.flexwrap div,
-.flexwrapNotstretch div {
-    flex-grow: 1;
 }
 
 .wp-block-group {
